@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "111bc242-15f6-4f7c-8a5a-e077485fbb66",
+		"name": "MongoDb_Query",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4811222"
+	},
+	"item": [
+		{
+			"name": "GetPieces",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/api/Pieces",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"Pieces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"756D60AC3601224DDE794657\",\r\n    \"PieceName\": \"King\",\r\n    \"MoveType\": 1,\r\n    \"Value\": 99999\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7092/api/Pieces",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"Pieces"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "756D60AC3601224DDE794657",
+							"disabled": true
+						},
+						{
+							"key": "PieceName",
+							"value": "King",
+							"disabled": true
+						},
+						{
+							"key": "MoveType",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "Value",
+							"value": "9999",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":\"756D60AC3601224DDE794657\",\r\n    \"PieceName\": \"King\",\r\n    \"MoveType\": 1,\r\n    \"Value\": 111\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7092/api/Pieces/756D60AC3601224DDE794657",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"Pieces",
+						"756D60AC3601224DDE794657"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/api/Pieces/756D60AC3601224DDE794657",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"Pieces",
+						"756D60AC3601224DDE794657"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
